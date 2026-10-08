@@ -1,0 +1,31 @@
+# UnrealEngine
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+CrashReportClient/
+
+# Visual Studio
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+
+# Mac
+.DS_Store
+*.xcodeproj
+*.xcworkspace
+
+# Log files
+*.log
