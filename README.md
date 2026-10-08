@@ -1,8 +1,10 @@
 # LABXR1 VR Campus Project
 
-Welcome to the LABXR1 VR Project! This repository contains our Unreal Engine VR project where we are recreating our campus (3 buildings with different art styles and sidequests).
+Welcome to the LABXR1 VR Project! This repository contains our Unreal Engine VR project where we are recreating our campus (3 buildings with different art styles and sidequests). 
 
-This repository is primarily managed by the lead programmer for syncing between workstations, but any team member contributing directly to the project files should read the rules below.
+**🚨 IMPORTANT: This project is built using Unreal Engine 5.7.4. Please ensure you are using this exact version to avoid compatibility issues.**
+
+This repository is primarily managed by the lead programmer for syncing between workstations. **If you would like to become a direct contributor on Git, please reach out to me personally.** Any team member contributing directly to the project files should read the rules below.
 
 ## ⚠️ CRITICAL: Git LFS (Large File Storage)
 
@@ -43,3 +45,13 @@ When adding assets, please place them in their respective folders:
 *   `_Shared/` - Generic assets used across multiple buildings (e.g., player character, basic UI)
 
 If you are an artist providing raw files (`.blend`, `.psd`, `.fbx`), it's generally best to provide them via Google Drive or another share, and the lead programmer will import them into the engine to ensure they are configured correctly. If you are importing them yourself, follow the naming rules!
+
+## 🔄 Workflow Reminder
+
+**Friendly Reminder:** Always `git pull` (or fetch and pull) before you start working for the day! This ensures you have the latest changes and minimizes the chance of merge conflicts.
+
+## 📞 Support & Contact
+
+If you have any issues with this project, need help with Git, or are stuck on Unreal Engine setup, please contact **Mehmety Timur Gayberi**:
+*   **Email:** [s37288@pjwstk.edu.pl](mailto:s37288@pjwstk.edu.pl)
+*   **Discord:** `m.timur`
