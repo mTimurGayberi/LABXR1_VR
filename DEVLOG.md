@@ -9,6 +9,13 @@ A quick log of progress and updates. Please keep entries concise.
 
 ## 📅 October 2026
 
+### 2026-10-31
+* **Timur (Dev):**
+  * Created `L_MainMenu` and 3D VR interface (`BP_MenuBoard` + `WBP_MainMenu`) styled with team UI tokens.
+  * Implemented VR controller laser pointer & trigger click (`IA_Shoot_Right` on Meta Quest 2).
+  * Added click debounce protection (`DoOnce` + button disable) to prevent duplicate level loads.
+  * Verified end-to-end VR game loop: 3D Menu -> Quest 2 pointer click -> fade transition -> Campus load.
+
 ### 2026-10-22
 * **Timur (Dev):**
   * Created `BP_VRGameInstance` for persistent VR comfort & volume settings.
