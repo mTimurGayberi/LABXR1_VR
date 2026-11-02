@@ -25,3 +25,8 @@ A quick log of progress and updates. Please keep entries concise.
   * Created Sublevels for each building and Navigation
   * Did file management
   * Started on Building A Level 0 Blockout
+
+### 2026-11-02
+* **Can Berk (Level Designer)**
+  * Started on Building B Level 0 Blockout
+
