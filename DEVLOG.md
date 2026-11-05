@@ -30,3 +30,8 @@ A quick log of progress and updates. Please keep entries concise.
 * **Can Berk (Level Designer)**
   * Started on Building B Level 0 Blockout
 
+### 2026-11-05
+* **Can Berk (Level Designer)**
+  * Progress on Building A and B Blockout, Levels 1, 2, 3 and the elevated bridge in between.
+
+
