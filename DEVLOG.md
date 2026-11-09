@@ -9,6 +9,12 @@ A quick log of progress and updates. Please keep entries concise.
 
 ## 📅 November 2026
 
+### 2026-11-09
+* **Timur (Dev):**
+  * Created physical Astronaut Helmet system (`HelmetRoot`) with realistic rotational inertia and head lag using damped `RInterp To` math.
+  * Designed translucent helmet visor glass material (`M_VisorGlass_Warp`) with crystal-clear center vision and peripheral corner comfort vignette.
+  * Modeled and integrated custom curved single-surface 3D astronaut visor mesh (`visor.uasset`) to wrap naturally around player's stereoscopic field of view.
+
 ### 2026-11-02
 * **Timur (Dev):**
   * Implemented full 360° VR Smooth Locomotion on Left Thumbstick (`IA_Move` 2D Vector + head-oriented vector math).
