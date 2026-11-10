@@ -36,3 +36,22 @@ A quick log of progress and updates. Please keep entries concise.
 * **Team:**
   * Assigned team roles (Reference, Blockout, Art Direction, Concept Art, UI/UX, Narrative, 3D Art, Dev).
   * Project Miro board and Discord co-working channels set up.
+
+### 2026-10-26
+* **Can Berk (Level Designer)**
+  * Created Sublevels for each building and Navigation
+  * Did file management
+  * Started on Building A Level 0 Blockout
+
+### 2026-11-02
+* **Can Berk (Level Designer)**
+  * Started on Building B Level 0 Blockout
+
+### 2026-11-05
+* **Can Berk (Level Designer)**
+  * Progress on Building A and B Blockout, Levels 1, 2, 3 and the elevated bridge in between.
+
+### 2026-11-09
+* **Can Berk (Level Designer)**
+  * Progress on Building C, only the frame for now.
+
