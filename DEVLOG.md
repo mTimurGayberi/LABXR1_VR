@@ -55,3 +55,6 @@ A quick log of progress and updates. Please keep entries concise.
 * **Can Berk (Level Designer)**
   * Progress on Building C, only the frame for now.
 
+### 2026-11-11
+* **Tomasz Pyka (Landscape design)**
+  * Started the landscape shape and basic texture 
