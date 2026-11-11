@@ -9,6 +9,15 @@ A quick log of progress and updates. Please keep entries concise.
 
 ## 📅 November 2026
 
+### 2026-11-11
+* **Timur (Dev):**
+  * Created dedicated `BP_PlayerStatsComponent` ActorComponent in `Content/_Shared/` to decouple survival statistics from pawn logic.
+  * Configured core survival variables (O2 duration, stamina rates, flashlight battery, compass navigation).
+  * Built live 360° VR compass heading normalizer and 8-cardinal direction calculator (`[N, NE, E, SE, S, SW, W, NW]`).
+  * Implemented VR sprint locomotion via `IA_Sprint` mapped to Left Thumbstick Button across Quest, Index, Vive, and Left Shift.
+  * Built modular `UpdateStamina(DeltaSeconds)` function with framerate-independent drain, clamped regen, and exhaustion auto-stop.
+  * Cleanly merged `feature/vr-helmet-hud` into `main` to establish the station blockout + core survival gameplay baseline.
+
 ### 2026-11-09
 * **Timur (Dev):**
   * Created physical Astronaut Helmet system (`HelmetRoot`) with realistic rotational inertia and head lag using damped `RInterp To` math.
