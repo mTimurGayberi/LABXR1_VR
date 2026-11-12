@@ -9,6 +9,13 @@ A quick log of progress and updates. Please keep entries concise.
 
 ## 📅 November 2026
 
+### 2026-11-12
+* **Timur (Dev):**
+  * Added dynamic exertion-based stamina recovery delay (`StaminaRegenDelayTimer`) using `Lerp` scaling between 0.5s (minor sprint) and 2.5s (total exhaustion).
+  * Built physiological oxygen depletion system (`UpdateOxygen`): base drain calibrated to tank lifetime (10 minutes) with real-time breathing multiplier scaling up to 2.5x during stamina exertion.
+  * Implemented oxygen replenishment API (`FullRefillOxygen` and `AddOxygen`) for station docking and portable canister interactions.
+  * Fast-forward merged verified survival gameplay mechanics into `main`.
+
 ### 2026-11-11
 * **Timur (Dev):**
   * Created dedicated `BP_PlayerStatsComponent` ActorComponent in `Content/_Shared/` to decouple survival statistics from pawn logic.
