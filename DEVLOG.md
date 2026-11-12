@@ -58,3 +58,7 @@ A quick log of progress and updates. Please keep entries concise.
 ### 2026-11-11
 * **Tomasz Pyka (Landscape design)**
   * Started the landscape shape and basic texture 
+
+  ### 2026-11-12
+* **Tomasz Pyka (Landscape design)**
+  * Experimented a bit more with landscape and light
