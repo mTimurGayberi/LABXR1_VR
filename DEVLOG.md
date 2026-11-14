@@ -9,6 +9,15 @@ A quick log of progress and updates. Please keep entries concise.
 
 ## 📅 November 2026
 
+### 2026-11-14
+* **Timur (Dev):**
+  * Created interactive `BP_OxygenStation` with finite oxygen reserves, player refill trigger zone, and Action Button integration (`IA_Interact` on Quest 'A' button & 'E' keyboard).
+  * Implemented physics-simulated grabbable `BP_OxygenTank` with dual-hand VR grab and throw capabilities.
+  * Engineered magnetic socket docking system: seamless hand-release via `E_GrabType` bypass, snap attachment, latent release guard (`0.5s` delay with `Is Valid` protection), and natural pull-to-demount via `OnComponentEndOverlap`.
+  * Guarded station transfer tick so gas can only be replenished when an actual physical tank is docked and loaded.
+  * Added `CapsuleCollision` to `BP_XRPawn` enabling reliable station trigger detection and interact inputs.
+  * Logged pending VR polish items: floor grab reachability / offset and socket Z alignment.
+
 ### 2026-11-12
 * **Timur (Dev):**
   * Added dynamic exertion-based stamina recovery delay (`StaminaRegenDelayTimer`) using `Lerp` scaling between 0.5s (minor sprint) and 2.5s (total exhaustion).
