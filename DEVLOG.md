@@ -62,3 +62,7 @@ A quick log of progress and updates. Please keep entries concise.
   ### 2026-11-12
 * **Tomasz Pyka (Landscape design)**
   * Experimented a bit more with landscape and light
+
+### 2026-11-21
+* **Can Berk (Level Designer)**
+  * Lighting + Building A floor 1 + Goodsky Asset
