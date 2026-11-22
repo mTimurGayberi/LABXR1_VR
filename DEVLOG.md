@@ -9,6 +9,14 @@ A quick log of progress and updates. Please keep entries concise.
 
 ## 📅 November 2026
 
+### 2026-11-22
+* **Timur (Dev):**
+  * Created abstract base class `BP_GrabbableItem` with integrated magnetic distance-pull (Gravity Glove telekinesis), smooth flight interpolation (`VInterp To`), automatic `TryGrab` hand snap, and a 0.8s drop cooldown preventing immediate re-snapping.
+  * Implemented forward-pointing VR raycast (`Sphere Trace For Objects`, radius 15cm, range 120cm) on `BP_XRPawn` for intuitive dual-hand aiming and distance-grabbing.
+  * Built `OnItemCaught` hand-off event on `BP_XRPawn` ensuring true physical "hold-to-grip and ungrip-to-drop" ergonomics across both controllers.
+  * Reparented `BP_OxygenTank` to inherit from `BP_GrabbableItem`, providing seamless ground reachability and magnetic retrieval without bending down to the physical floor.
+  * Hardened `BP_OxygenStation` socket docking and ejection filters (`Other Comp == ItemMesh`) to eliminate trigger interference and socket re-snapping.
+
 ### 2026-11-14
 * **Timur (Dev):**
   * Created interactive `BP_OxygenStation` with finite oxygen reserves, player refill trigger zone, and Action Button integration (`IA_Interact` on Quest 'A' button & 'E' keyboard).
