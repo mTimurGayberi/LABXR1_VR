@@ -88,3 +88,7 @@ A quick log of progress and updates. Please keep entries concise.
 ### 2026-11-21
 * **Can Berk (Level Designer)**
   * Lighting + Building A floor 1 + Goodsky Asset
+
+    ### 2026-11-22
+* **Tomasz Pyka (Landscape design)**
+  * Worked on mountain range and some textures
