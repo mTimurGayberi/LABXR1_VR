@@ -9,6 +9,23 @@ A quick log of progress and updates. Please keep entries concise.
 
 ## 📅 November 2026
 
+### 2026-11-22
+* **Timur (Dev):**
+  * Created abstract base class `BP_GrabbableItem` with integrated magnetic distance-pull (Gravity Glove telekinesis), smooth flight interpolation (`VInterp To`), automatic `TryGrab` hand snap, and a 0.8s drop cooldown preventing immediate re-snapping.
+  * Implemented forward-pointing VR raycast (`Sphere Trace For Objects`, radius 15cm, range 120cm) on `BP_XRPawn` for intuitive dual-hand aiming and distance-grabbing.
+  * Built `OnItemCaught` hand-off event on `BP_XRPawn` ensuring true physical "hold-to-grip and ungrip-to-drop" ergonomics across both controllers.
+  * Reparented `BP_OxygenTank` to inherit from `BP_GrabbableItem`, providing seamless ground reachability and magnetic retrieval without bending down to the physical floor.
+  * Hardened `BP_OxygenStation` socket docking and ejection filters (`Other Comp == ItemMesh`) to eliminate trigger interference and socket re-snapping.
+
+### 2026-11-14
+* **Timur (Dev):**
+  * Created interactive `BP_OxygenStation` with finite oxygen reserves, player refill trigger zone, and Action Button integration (`IA_Interact` on Quest 'A' button & 'E' keyboard).
+  * Implemented physics-simulated grabbable `BP_OxygenTank` with dual-hand VR grab and throw capabilities.
+  * Engineered magnetic socket docking system: seamless hand-release via `E_GrabType` bypass, snap attachment, latent release guard (`0.5s` delay with `Is Valid` protection), and natural pull-to-demount via `OnComponentEndOverlap`.
+  * Guarded station transfer tick so gas can only be replenished when an actual physical tank is docked and loaded.
+  * Added `CapsuleCollision` to `BP_XRPawn` enabling reliable station trigger detection and interact inputs.
+  * Logged pending VR polish items: floor grab reachability / offset and socket Z alignment.
+
 ### 2026-11-12
 * **Timur (Dev):**
   * Added dynamic exertion-based stamina recovery delay (`StaminaRegenDelayTimer`) using `Lerp` scaling between 0.5s (minor sprint) and 2.5s (total exhaustion).
