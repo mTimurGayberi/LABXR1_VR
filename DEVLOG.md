@@ -94,3 +94,24 @@ A quick log of progress and updates. Please keep entries concise.
 * **Can Berk (Level Designer)**
   * Progress on Building C, only the frame for now.
 
+### 2026-11-26
+* **Mehmet Timur Gayberi (Lead Dev):**
+  * **Dynamic Carry Encumbrance (`BP_XRPawn`):**
+    * Implemented pure function `GetSpeedMultiplier` querying `HeldComponentRight` and `HeldComponentLeft`.
+    * Applied smooth speed scaling: 100% base speed (0 items), 75% speed (1 item held), 50% speed (2 items held).
+  * **Modular Hand State Architecture (`IsHandBusy`):**
+    * Created `IsHandBusy(EControllerHand Hand)` pure helper in `BP_XRPawn` for modular hand availability validation across interactive station components.
+  * **Root Capsule Collision & Wall Clipping Fix:**
+    * Promoted `Capsule` to RootComponent in `BP_XRPawn` (`VROrigin` offset set to `Z = -88.0` for 1:1 OpenXR floor alignment).
+    * Configured collision response: `WorldStatic = Block`, `WorldDynamic = Block`, `Visibility = Ignore`, `Camera = Ignore`.
+    * Set `PhysicsBody = Ignore` on the pawn capsule, resolving the blocking collision bug when holding objects (e.g. oxygen tanks) close to the chest.
+    * Enabled `Sweep = True` on horizontal movement in `EventGraph`, preventing walking through station walls and doorways.
+  * **Stair & Slope Locomotion Engine (`GetStepAdjustedDelta`):**
+    * Designed dual-trace hybrid locomotion algorithm separating vertical terrain adjustment (`Sweep = False`) from horizontal movement (`Sweep = True`):
+      * **Ahead Trace (Step-Up):** Casts 50 cm ahead with 2D-normalized movement vector, detecting steps ($+3.0\text{ cm to }+60.0\text{ cm}$) and lifting the capsule smoothly via `FInterp To` (Speed 40.0) before physical riser impact.
+      * **Feet Trace (Step-Down):** Casts downward directly beneath capsule center, detecting ground drops ($-80.0\text{ cm to }-3.0\text{ cm}$) and smoothly lowering the capsule onto lower steps or downhill slopes.
+      * **Anti-Hopping Conflict Resolution:** Added `NOT (Ahead Z > Feet Z + 5.0)` gate on the Feet Trace, resolving the "tug-of-war" hopping loop on tall 45 cm entrance steps.
+  * **Station Tool Assets:**
+    * Imported `Toy_FlashLight` modular assets in `Content/Fab/` in preparation for equippable station flashlight tool.
+
+

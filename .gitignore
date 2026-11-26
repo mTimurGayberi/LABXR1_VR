@@ -29,3 +29,7 @@ CrashReportClient/
 
 # Log files
 *.log
+
+# Scratch scripts
+scratch/
+
