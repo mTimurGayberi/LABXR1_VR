@@ -113,5 +113,11 @@ A quick log of progress and updates. Please keep entries concise.
       * **Anti-Hopping Conflict Resolution:** Added `NOT (Ahead Z > Feet Z + 5.0)` gate on the Feet Trace, resolving the "tug-of-war" hopping loop on tall 45 cm entrance steps.
   * **Station Tool Assets:**
     * Imported `Toy_FlashLight` modular assets in `Content/Fab/` in preparation for equippable station flashlight tool.
+  * **Custom Astronaut VR Hands Integration:**
+    * Successfully integrated custom astronaut gloves into `BP_XRPawn` mapped to `SK_MannequinsXR` VR skeleton.
+    * Resolved Blender FBX armature naming (`Armature`) for seamless root bone merging with OpenXR standard.
+    * Fixed right hand mirrored transform issues (baked negative scale transforms, recalculated normals outside, mirrored vertex groups to `_r`).
+    * Verified dual-hand finger articulation, grip curling, and gestures in VR headset.
+
 
 
