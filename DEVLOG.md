@@ -109,3 +109,7 @@ A quick log of progress and updates. Please keep entries concise.
     ### 2026-11-22
 * **Tomasz Pyka (Landscape design)**
   * Worked on mountain range and some textures
+
+### 2026-11-26
+* **Can Berk (Level Designer)**
+  * Building A remade with Modular walls
